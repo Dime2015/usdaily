@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美股小报 · 2026-08-31</title>
+<style>
+  :root {
+    --paper: #f3efe6;
+    --ink: #1c1914;
+    --muted: #6a645a;
+    --line: #d9d1c3;
+    --up: #1b6b4a;
+    --down: #a33b32;
+    --chip: #ece6d8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); }
+  body {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", sans-serif;
+    font-size: 16px; line-height: 1.55;
+    max-width: 760px; margin: 0 auto; padding: 28px 18px 64px;
+  }
+  h1, h2, .mast {
+    font-family: "Songti SC", "Noto Serif SC", "Source Han Serif SC", Georgia, serif;
+    font-weight: 700; letter-spacing: 0.02em;
+  }
+  .kicker { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+  h1 { font-size: 34px; line-height: 1.15; margin: 6px 0 8px; }
+  .deck { color: var(--muted); margin: 0 0 22px; font-size: 15px; }
+  hr.rule { border: 0; border-top: 2px solid var(--ink); margin: 0 0 18px; }
+  hr.thin { border: 0; border-top: 1px solid var(--line); margin: 22px 0; }
+  h2 { font-size: 20px; margin: 0 0 10px; }
+  p { margin: 0 0 10px; }
+  .sup { font-size: 10px; vertical-align: super; color: var(--muted); margin-left: 1px; }
+  .strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px 12px; margin: 8px 0 6px; }
+  .cell .n { font-variant-numeric: tabular-nums; font-size: 20px; font-weight: 650; }
+  .cell .l { font-size: 11px; color: var(--muted); }
+  .up { color: var(--up); }
+  .down { color: var(--down); }
+  .chart-wrap { background: var(--chip); padding: 12px 10px 8px; margin: 8px 0 16px; }
+  .chart-cap { font-size: 11px; color: var(--muted); margin-top: 4px; }
+  svg text { font-family: inherit; }
+  .news li { margin: 0 0 10px; }
+  .news { padding-left: 1.1em; margin: 0; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .mv { display: flex; justify-content: space-between; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  .mv:last-child { border-bottom: 0; }
+  .mv .t { font-weight: 650; }
+  .mv .why { display: block; font-size: 12px; color: var(--muted); font-weight: 400; }
+  .note { font-size: 13px; color: var(--muted); }
+  .judge { font-size: 18px; line-height: 1.45; margin: 0; }
+  footer { font-size: 12px; color: var(--muted); }
+  footer ol { padding-left: 1.2em; }
+  footer li { margin: 0 0 6px; }
+  @media (max-width: 560px) {
+    h1 { font-size: 28px; }
+    .strip { grid-template-columns: repeat(2, 1fr); }
+    .pair { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="kicker">试运行 · 收盘复盘 · 不是荐股</div>
+  <h1>美股小报</h1>
+  <p class="deck">2026年8月31日（周一）。大盘小跌收了8月。油涨了，债息升了，大家开始更认真地赌美联储9月加息。<span class="sup">1,2</span></p>
+  <hr class="rule">
+
+  <h2>今天市场什么味道</h2>
+  <div class="strip">
+    <div class="cell"><div class="l">标普500 ETF</div><div class="n down">−0.30%</div></div>
+    <div class="cell"><div class="l">纳指100 ETF</div><div class="n up">+0.05%</div></div>
+    <div class="cell"><div class="l">道指 ETF</div><div class="n down">−0.68%</div></div>
+    <div class="cell"><div class="l">小盘 ETF</div><div class="n down">−1.96%</div></div>
+    <div class="cell"><div class="l">十年期美债利率</div><div class="n down">4.76%</div></div>
+    <div class="cell"><div class="l">原油</div><div class="n up">+2.83%</div></div>
+    <div class="cell"><div class="l">黄金</div><div class="n down">−1.05%</div></div>
+    <div class="cell"><div class="l">恐慌指数</div><div class="n down">14.92</div></div>
+  </div>
+  <p class="note">数字是收盘对收盘。指数用对应 ETF，和报纸上的指数点位会差一丁点。<span class="sup">2</span> 原油、黄金、恐慌指数的周一收盘另用行情日K核对过。<span class="sup">6</span></p>
+
+  <div class="chart-wrap">
+    <svg viewBox="0 0 640 120" width="100%" height="120" role="img" aria-label="标普500 ETF近8个交易日收盘">
+      <text x="0" y="14" font-size="12" fill="#6a645a">标普500 ETF 近8日收盘（美元）</text>
+      <polyline fill="none" stroke="#1c1914" stroke-width="2"
+        points="16,71 104,52 192,66 280,51 368,50 456,18 544,29 632,44"/>
+      <circle cx="632" cy="44" r="3.5" fill="#a33b32"/>
+      <text x="16" y="112" font-size="11" fill="#6a645a">762.6</text>
+      <text x="560" y="112" font-size="11" fill="#6a645a">周一 767.0</text>
+    </svg>
+    <div class="chart-cap">来源：本机 yfinance-api（Yahoo 行情）<span class="sup">2</span></div>
+  </div>
+
+  <h2>板块：谁在挣钱，谁在挨打</h2>
+  <div class="chart-wrap">
+    <svg viewBox="0 0 640 300" width="100%" height="300" role="img" aria-label="11个行业ETF涨跌">
+      <!-- zero at x=360 -->
+      <line x1="360" y1="8" x2="360" y2="292" stroke="#1c1914" stroke-width="1"/>
+      <!-- scale: 1% = 70px -->
+      <!-- XLE +2.04 -> 143 -->
+      <rect x="360" y="12" width="143" height="18" fill="#1b6b4a"/><text x="8" y="26" font-size="12">能源 +2.0%</text>
+      <rect x="360" y="38" width="43" height="18" fill="#1b6b4a"/><text x="8" y="52" font-size="12">可选消费 +0.6%</text>
+      <rect x="360" y="64" width="3" height="18" fill="#1b6b4a"/><text x="8" y="78" font-size="12">通信 持平</text>
+      <rect x="352" y="90" width="8" height="18" fill="#a33b32"/><text x="8" y="104" font-size="12">日常消费 −0.1%</text>
+      <rect x="335" y="116" width="25" height="18" fill="#a33b32"/><text x="8" y="130" font-size="12">医疗 −0.4%</text>
+      <rect x="313" y="142" width="47" height="18" fill="#a33b32"/><text x="8" y="156" font-size="12">金融 −0.7%</text>
+      <rect x="302" y="168" width="58" height="18" fill="#a33b32"/><text x="8" y="182" font-size="12">房地产 −0.8%</text>
+      <rect x="289" y="194" width="71" height="18" fill="#a33b32"/><text x="8" y="208" font-size="12">原材料 −1.0%</text>
+      <rect x="282" y="220" width="78" height="18" fill="#a33b32"/><text x="8" y="234" font-size="12">科技 −1.1%</text>
+      <rect x="216" y="246" width="144" height="18" fill="#a33b32"/><text x="8" y="260" font-size="12">工业 −2.1%</text>
+      <rect x="206" y="272" width="154" height="18" fill="#a33b32"/><text x="8" y="286" font-size="12">公用事业 −2.2%</text>
+    </svg>
+    <div class="chart-cap">11个行业ETF，相对各自上一日收盘。<span class="sup">2</span> 外面报道也说能源最强、通信偏弱。<span class="sup">7</span></div>
+  </div>
+  <p>人话：打仗推高油价，油田和油公司今天有人买。越怕加息的东西越差——电、工厂、小盘股。科技没崩，但也没人抢着抄。</p>
+
+  <hr class="thin">
+  <h2>大事</h2>
+  <ol class="news">
+    <li><b>美国和伊朗又动手，霍尔木兹海峡还堵着。</b> 周末双方再打一轮，油轮通道不顺，油价往上窜。路透写的是美国原油靠近 86 美元；我们这套行情里，周一原油期货收在 85.76，比上周五涨 2.8%。<span class="sup">1,6</span></li>
+    <li><b>市场更相信美联储 9 月要加息。</b> 主席沃什周五在杰克逊霍尔讲话偏硬。到周一，期货市场给 9 月加 25 个基点的概率超过 65%。十年期美债利率收到 4.76%。<span class="sup">1,5,2</span></li>
+    <li><b>8 月其实是涨的，周一只是月尾泄气。</b> 标普 500 8 月大约 +2.6%，纳指大约 +3.9%，是 2021 年以来最好的 8 月。周一三大多跌，但没把整月涨幅吐回去。<span class="sup">3</span></li>
+    <li><b>英伟达要向联发科投 35 亿美元。</b> 扩大定制 AI 芯片合作。英伟达周一本身只小涨约 1.5%，不是今天的主线，但是一条真新闻。<span class="sup">4,6</span></li>
+    <li><b>PayPal 被传并购黄了，但大跌发生在上周五。</b> 有报道称 Advent 和 Stripe 放弃约 500 亿美元收购。PayPal 上周五已经重挫，周一只是再跌约 1.9%。别把两天的账记在今天头上。<span class="sup">8,6</span></li>
+  </ol>
+
+  <hr class="thin">
+  <h2>个股：市值不算小的大涨大跌</h2>
+  <p class="note">门槛：尽量看 20 亿美元以上。全市场扫描时接口被打满，名单不完整；下面这些是已核对到、且幅度够大的。<span class="sup">2,6</span></p>
+  <div class="pair">
+    <div>
+      <div class="kicker">涨得多</div>
+      <div class="mv"><div><span class="t">SLB 斯伦贝谢</span><span class="why">油田服务。海峡一紧，钻井和油服有人买。周一约 +9.3%。<span class="sup">6,7</span></span></div><div class="up">+9.3%</div></div>
+      <div class="mv"><div><span class="t">WFRD 韦瑟福德</span><span class="why">同样是油田服务，约 +6.3%。<span class="sup">2</span></span></div><div class="up">+6.3%</div></div>
+      <div class="mv"><div><span class="t">TSLA 特斯拉</span><span class="why">约 +5.5%。当天没核到过硬公司新闻，先当资金行为。<span class="sup">2</span></span></div><div class="up">+5.5%</div></div>
+      <div class="mv"><div><span class="t">XOM 埃克森美孚</span><span class="why">大石油，约 +2.9%，跟油价走。<span class="sup">6,7</span></span></div><div class="up">+2.9%</div></div>
+    </div>
+    <div>
+      <div class="kicker">跌得多</div>
+      <div class="mv"><div><span class="t">HWM 豪梅特航空</span><span class="why">约 −8.5%。有报道称马斯克确认 SpaceX 要自己铸燃气轮机零件，市场担心它丢生意。<span class="sup">9,6</span></span></div><div class="down">−8.5%</div></div>
+      <div class="mv"><div><span class="t">AON 怡安</span><span class="why">保险经纪，约 −8.0%。原因未核实。<span class="sup">2,6</span></span></div><div class="down">−8.0%</div></div>
+      <div class="mv"><div><span class="t">GNRC Generac</span><span class="why">家用发电机，约 −6.0%。原因未核实。<span class="sup">2,6</span></span></div><div class="down">−6.0%</div></div>
+      <div class="mv"><div><span class="t">CLX 高乐氏</span><span class="why">日用品，约 −5.7%。原因未核实。<span class="sup">2,6</span></span></div><div class="down">−5.7%</div></div>
+    </div>
+  </div>
+  <p class="note">Qnity Electronics（代码 Q）也跌了约 5.5%，名字生僻，原因未核实，先不展开。<span class="sup">6</span></p>
+
+  <hr class="thin">
+  <h2>你的关注</h2>
+  <div class="strip">
+    <div class="cell"><div class="l">SPY</div><div class="n down">−0.30%</div></div>
+    <div class="cell"><div class="l">QQQ</div><div class="n up">+0.05%</div></div>
+    <div class="cell"><div class="l">TSLA</div><div class="n up">+5.51%</div></div>
+    <div class="cell"><div class="l">GOOG</div><div class="n down">−2.18%</div></div>
+    <div class="cell"><div class="l">CLSK</div><div class="n down">−0.34%</div></div>
+  </div>
+  <p class="note">只报涨跌，不做持仓建议。<span class="sup">2</span></p>
+
+  <hr class="thin">
+  <h2>一句判断</h2>
+  <p class="judge">今天定价的是油和加息，不是哪家公司突然变好变坏。海峡再开火，钱往石油挪，离开怕利率的股票。还没定价清楚的是：这轮冲突会不会真把通胀打回来，以及 9 月 16 日美联储到底加不加。</p>
+
+  <hr class="thin">
+  <footer>
+    <div class="kicker">出处</div>
+    <ol>
+      <li>路透社，2026-08-31，《Wall Street closes lower as oil prices jump…》。标普 −0.33%、道指 −0.70%、纳指 −0.12%；霍尔木兹；沃什讲话。</li>
+      <li>本机 <code>host.docker.internal:8798</code> yfinance-api（yfinance 1.6.0，Yahoo 行情）。SPY/QQQ/IWM/DIA、11 个行业 ETF、TSLA/GOOG/CLSK、WFRD 等。</li>
+      <li>Barron's 直播稿，2026-08-31。8 月标普约 +2.6%、纳指约 +3.9%。</li>
+      <li>彭博 / 路透，英伟达拟向联发科投资 35 亿美元。</li>
+      <li>路透转述 CME FedWatch：9 月加息 25 基点概率超过 65%。</li>
+      <li>Yahoo Finance 日K（query1 chart），用来核对 8 月 31 日收盘，以及 8798 被打满后没拉全的个股（SLB、XOM、NVDA、PYPL、原油、黄金、VIX）。</li>
+      <li>TipRanks，2026-08-31：能源板块约 +2.11%，通信最弱。</li>
+      <li>路透 / 彭博：Advent 与 Stripe 放弃收购 PayPal 的报道。大跌主要在 8 月 28 日。</li>
+      <li>彭博 Stock Movers 播客，2026-08-31：Howmet、GE Vernova 等因 SpaceX 燃气轮机零件报道下跌。</li>
+    </ol>
+    <p>试跑说明：8798 并发一高就会 502，所以个股榜不是全市场穷尽。安静日或接口挂了会写清楚，不编数字。</p>
+  </footer>
+</body>
+</html>
