@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>美股小报 · 2026-08-31</title>
+<title>美股小报 · 2026-09-01</title>
 <style>
   :root {
     --paper: #f3efe6;
@@ -61,32 +61,32 @@
 </style>
 </head>
 <body>
-  <div class="kicker">试运行 · 收盘复盘 · 不是荐股</div>
+  <div class="kicker">收盘复盘 · 不是荐股</div>
   <h1>美股小报</h1>
-  <p class="deck">2026年8月31日（周一）。大盘小跌收了8月。油涨了，债息升了，大家开始更认真地赌美联储9月加息。<span class="sup">1,2</span></p>
+  <p class="deck">2026年9月1日（周二）。9月开门就跌。油冲过 90 美元，债息再升，贵的成长股先被砸。<span class="sup">1,2</span></p>
   <hr class="rule">
 
   <h2>今天市场什么味道</h2>
   <div class="strip">
-    <div class="cell"><div class="l">标普500 ETF</div><div class="n down">−0.30%</div></div>
-    <div class="cell"><div class="l">纳指100 ETF</div><div class="n up">+0.05%</div></div>
-    <div class="cell"><div class="l">道指 ETF</div><div class="n down">−0.68%</div></div>
-    <div class="cell"><div class="l">小盘 ETF</div><div class="n down">−1.96%</div></div>
-    <div class="cell"><div class="l">十年期美债利率</div><div class="n down">4.76%</div></div>
-    <div class="cell"><div class="l">原油</div><div class="n up">+2.83%</div></div>
-    <div class="cell"><div class="l">黄金</div><div class="n down">−1.05%</div></div>
-    <div class="cell"><div class="l">恐慌指数</div><div class="n down">14.92</div></div>
+    <div class="cell"><div class="l">标普500 ETF</div><div class="n down">−0.69%</div></div>
+    <div class="cell"><div class="l">纳指100 ETF</div><div class="n down">−1.27%</div></div>
+    <div class="cell"><div class="l">道指 ETF</div><div class="n down">−0.72%</div></div>
+    <div class="cell"><div class="l">小盘 ETF</div><div class="n down">−1.14%</div></div>
+    <div class="cell"><div class="l">十年期美债利率</div><div class="n down">4.80%</div></div>
+    <div class="cell"><div class="l">原油</div><div class="n up">+5.74%</div></div>
+    <div class="cell"><div class="l">黄金</div><div class="n down">−1.25%</div></div>
+    <div class="cell"><div class="l">恐慌指数</div><div class="n down">16.34</div></div>
   </div>
-  <p class="note">数字是收盘对收盘。指数用对应 ETF，和报纸上的指数点位会差一丁点。<span class="sup">2</span> 原油、黄金、恐慌指数的周一收盘另用行情日K核对过。<span class="sup">6</span></p>
+  <p class="note">数字是收盘对收盘。指数用对应 ETF，和报纸上的指数点位会差一丁点。<span class="sup">2</span> 路透写标普 −0.71%、道指 −0.79%、纳指 −1.03%，方向一致。<span class="sup">1</span></p>
 
   <div class="chart-wrap">
     <svg viewBox="0 0 640 120" width="100%" height="120" role="img" aria-label="标普500 ETF近8个交易日收盘">
       <text x="0" y="14" font-size="12" fill="#6a645a">标普500 ETF 近8日收盘（美元）</text>
       <polyline fill="none" stroke="#1c1914" stroke-width="2"
-        points="16,71 104,52 192,66 280,51 368,50 456,18 544,29 632,44"/>
-      <circle cx="632" cy="44" r="3.5" fill="#a33b32"/>
-      <text x="16" y="112" font-size="11" fill="#6a645a">762.6</text>
-      <text x="560" y="112" font-size="11" fill="#6a645a">周一 767.0</text>
+        points="16,63.3 104,81.4 192,61.8 280,60.4 368,20.0 456,34.1 544,52.6 632,95.0"/>
+      <circle cx="632" cy="95" r="3.5" fill="#a33b32"/>
+      <text x="16" y="112" font-size="11" fill="#6a645a">765.7</text>
+      <text x="548" y="112" font-size="11" fill="#6a645a">周二 761.8</text>
     </svg>
     <div class="chart-cap">来源：本机 yfinance-api（Yahoo 行情）<span class="sup">2</span></div>
   </div>
@@ -94,87 +94,86 @@
   <h2>板块：谁在挣钱，谁在挨打</h2>
   <div class="chart-wrap">
     <svg viewBox="0 0 640 300" width="100%" height="300" role="img" aria-label="11个行业ETF涨跌">
-      <!-- zero at x=360 -->
       <line x1="360" y1="8" x2="360" y2="292" stroke="#1c1914" stroke-width="1"/>
-      <!-- scale: 1% = 70px -->
-      <!-- XLE +2.04 -> 143 -->
-      <rect x="360" y="12" width="143" height="18" fill="#1b6b4a"/><text x="8" y="26" font-size="12">能源 +2.0%</text>
-      <rect x="360" y="38" width="43" height="18" fill="#1b6b4a"/><text x="8" y="52" font-size="12">可选消费 +0.6%</text>
-      <rect x="360" y="64" width="3" height="18" fill="#1b6b4a"/><text x="8" y="78" font-size="12">通信 持平</text>
-      <rect x="352" y="90" width="8" height="18" fill="#a33b32"/><text x="8" y="104" font-size="12">日常消费 −0.1%</text>
-      <rect x="335" y="116" width="25" height="18" fill="#a33b32"/><text x="8" y="130" font-size="12">医疗 −0.4%</text>
-      <rect x="313" y="142" width="47" height="18" fill="#a33b32"/><text x="8" y="156" font-size="12">金融 −0.7%</text>
-      <rect x="302" y="168" width="58" height="18" fill="#a33b32"/><text x="8" y="182" font-size="12">房地产 −0.8%</text>
-      <rect x="289" y="194" width="71" height="18" fill="#a33b32"/><text x="8" y="208" font-size="12">原材料 −1.0%</text>
-      <rect x="282" y="220" width="78" height="18" fill="#a33b32"/><text x="8" y="234" font-size="12">科技 −1.1%</text>
-      <rect x="216" y="246" width="144" height="18" fill="#a33b32"/><text x="8" y="260" font-size="12">工业 −2.1%</text>
-      <rect x="206" y="272" width="154" height="18" fill="#a33b32"/><text x="8" y="286" font-size="12">公用事业 −2.2%</text>
+      <rect x="360" y="12" width="89" height="18" fill="#1b6b4a"/><text x="8" y="26" font-size="12">能源 +1.3%</text>
+      <rect x="360" y="38" width="55" height="18" fill="#1b6b4a"/><text x="8" y="52" font-size="12">公用事业 +0.8%</text>
+      <rect x="360" y="64" width="46" height="18" fill="#1b6b4a"/><text x="8" y="78" font-size="12">医疗 +0.7%</text>
+      <rect x="360" y="90" width="22" height="18" fill="#1b6b4a"/><text x="8" y="104" font-size="12">日常消费 +0.3%</text>
+      <rect x="349" y="116" width="11" height="18" fill="#a33b32"/><text x="8" y="130" font-size="12">房地产 −0.2%</text>
+      <rect x="324" y="142" width="36" height="18" fill="#a33b32"/><text x="8" y="156" font-size="12">通信 −0.5%</text>
+      <rect x="298" y="168" width="62" height="18" fill="#a33b32"/><text x="8" y="182" font-size="12">金融 −0.9%</text>
+      <rect x="278" y="194" width="82" height="18" fill="#a33b32"/><text x="8" y="208" font-size="12">原材料 −1.2%</text>
+      <rect x="264" y="220" width="96" height="18" fill="#a33b32"/><text x="8" y="234" font-size="12">工业 −1.4%</text>
+      <rect x="253" y="246" width="107" height="18" fill="#a33b32"/><text x="8" y="260" font-size="12">科技 −1.5%</text>
+      <rect x="240" y="272" width="120" height="18" fill="#a33b32"/><text x="8" y="286" font-size="12">可选消费 −1.7%</text>
     </svg>
-    <div class="chart-cap">11个行业ETF，相对各自上一日收盘。<span class="sup">2</span> 外面报道也说能源最强、通信偏弱。<span class="sup">7</span></div>
+    <div class="chart-cap">11个行业ETF，相对各自上一日收盘。<span class="sup">2</span> 报纸也说能源最强、可选消费最弱。<span class="sup">1</span></div>
   </div>
-  <p>人话：打仗推高油价，油田和油公司今天有人买。越怕加息的东西越差——电、工厂、小盘股。科技没崩，但也没人抢着抄。</p>
+  <p>人话：油贵了，油田有人买。利率再往上顶，越贵、越靠未来赚钱的股票越差——科技、买车买奢侈品、工厂。防守的药和日用品勉强站住。</p>
 
   <hr class="thin">
   <h2>大事</h2>
   <ol class="news">
-    <li><b>美国和伊朗又动手，霍尔木兹海峡还堵着。</b> 周末双方再打一轮，油轮通道不顺，油价往上窜。路透写的是美国原油靠近 86 美元；我们这套行情里，周一原油期货收在 85.76，比上周五涨 2.8%。<span class="sup">1,6</span></li>
-    <li><b>市场更相信美联储 9 月要加息。</b> 主席沃什周五在杰克逊霍尔讲话偏硬。到周一，期货市场给 9 月加 25 个基点的概率超过 65%。十年期美债利率收到 4.76%。<span class="sup">1,5,2</span></li>
-    <li><b>8 月其实是涨的，周一只是月尾泄气。</b> 标普 500 8 月大约 +2.6%，纳指大约 +3.9%，是 2021 年以来最好的 8 月。周一三大多跌，但没把整月涨幅吐回去。<span class="sup">3</span></li>
-    <li><b>英伟达要向联发科投 35 亿美元。</b> 扩大定制 AI 芯片合作。英伟达周一本身只小涨约 1.5%，不是今天的主线，但是一条真新闻。<span class="sup">4,6</span></li>
-    <li><b>PayPal 被传并购黄了，但大跌发生在上周五。</b> 有报道称 Advent 和 Stripe 放弃约 500 亿美元收购。PayPal 上周五已经重挫，周一只是再跌约 1.9%。别把两天的账记在今天头上。<span class="sup">8,6</span></li>
+    <li><b>霍尔木兹再开火，油价一天跳了约 6%。</b> 美国对伊朗目标再打一轮，有报道说油轮也挨了炮弹。我们这套行情里，美国原油期货收在 90.68 美元，比周一涨 5.7%，一个多月来第一次站上 90。布伦特报纸写的是约 +4.6%，收到 94.65。<span class="sup">1,3,2</span></li>
+    <li><b>全球债券一起砸，市场更信美联储 9 月要加息。</b> 十年期美债利率收到 4.80%，大约是 2025 年 1 月以来最高。路透转述 CME FedWatch：9 月加 25 个基点的概率约 68%，一周前还不到 40%。日本十年期国债利率碰到 3%，是 1996 年以来没见过的位置。<span class="sup">1,2,3</span></li>
+    <li><b>空缺职位没给股市台阶下。</b> 劳工部 JOLTS：7 月职位空缺 727 万，略低于市场预估的 730 万；6 月还被下修。招人偏弱，劳动力市场像在原地踏步，挡不住油和利率。<span class="sup">4,1</span></li>
+    <li><b>苹果换帅是真新闻，但不是今天跌的主因。</b> 硬件负责人特努斯正式接库克当 CEO，库克改任执行董事长。交接 4 月就宣布了。大盘跌的是油和利率，不是库克下班。<span class="sup">5</span></li>
+    <li><b>加州电企今天涨，账要记在周一头上。</b> 太平洋煤电、爱迪生国际周一因山火责任法案被砸（大约 −20%、−23%）。周二只是反抽，不是突然有了新利好。<span class="sup">6,2</span></li>
   </ol>
 
   <hr class="thin">
   <h2>个股：市值不算小的大涨大跌</h2>
-  <p class="note">门槛：尽量看 20 亿美元以上。全市场扫描时接口被打满，名单不完整；下面这些是已核对到、且幅度够大的。<span class="sup">2,6</span></p>
+  <p class="note">门槛：尽量看 20 亿美元以上、单日 |涨跌|≥5%。扫描了约 492 只，成交 491 只，名单不是全市场穷尽。<span class="sup">2</span></p>
   <div class="pair">
     <div>
       <div class="kicker">涨得多</div>
-      <div class="mv"><div><span class="t">SLB 斯伦贝谢</span><span class="why">油田服务。海峡一紧，钻井和油服有人买。周一约 +9.3%。<span class="sup">6,7</span></span></div><div class="up">+9.3%</div></div>
-      <div class="mv"><div><span class="t">WFRD 韦瑟福德</span><span class="why">同样是油田服务，约 +6.3%。<span class="sup">2</span></span></div><div class="up">+6.3%</div></div>
-      <div class="mv"><div><span class="t">TSLA 特斯拉</span><span class="why">约 +5.5%。当天没核到过硬公司新闻，先当资金行为。<span class="sup">2</span></span></div><div class="up">+5.5%</div></div>
-      <div class="mv"><div><span class="t">XOM 埃克森美孚</span><span class="why">大石油，约 +2.9%，跟油价走。<span class="sup">6,7</span></span></div><div class="up">+2.9%</div></div>
+      <div class="mv"><div><span class="t">MRNA 莫德纳</span><span class="why">约 +9.9%。两周前癌症疫苗消息炒过一轮，今天分析师有上调，属于余波，不是当天新药获批。<span class="sup">7,2</span></span></div><div class="up">+9.9%</div></div>
+      <div class="mv"><div><span class="t">EIX 爱迪生国际</span><span class="why">约 +8.9%。周一因加州山火法案暴跌后的反弹。<span class="sup">6,2</span></span></div><div class="up">+8.9%</div></div>
+      <div class="mv"><div><span class="t">PCG 太平洋煤电</span><span class="why">约 +6.0%。同样是周一砸完的反抽。<span class="sup">6,2</span></span></div><div class="up">+6.0%</div></div>
     </div>
     <div>
       <div class="kicker">跌得多</div>
-      <div class="mv"><div><span class="t">HWM 豪梅特航空</span><span class="why">约 −8.5%。有报道称马斯克确认 SpaceX 要自己铸燃气轮机零件，市场担心它丢生意。<span class="sup">9,6</span></span></div><div class="down">−8.5%</div></div>
-      <div class="mv"><div><span class="t">AON 怡安</span><span class="why">保险经纪，约 −8.0%。原因未核实。<span class="sup">2,6</span></span></div><div class="down">−8.0%</div></div>
-      <div class="mv"><div><span class="t">GNRC Generac</span><span class="why">家用发电机，约 −6.0%。原因未核实。<span class="sup">2,6</span></span></div><div class="down">−6.0%</div></div>
-      <div class="mv"><div><span class="t">CLX 高乐氏</span><span class="why">日用品，约 −5.7%。原因未核实。<span class="sup">2,6</span></span></div><div class="down">−5.7%</div></div>
+      <div class="mv"><div><span class="t">AXON 艾克森</span><span class="why">约 −8.5%。高估值软件被利率杀，当天没核到过硬公司新闻。<span class="sup">7,2</span></span></div><div class="down">−8.5%</div></div>
+      <div class="mv"><div><span class="t">CDNS 铿腾电子</span><span class="why">约 −7.6%。芯片设计软件跟着估值杀。原因未核实到单独利空。<span class="sup">8,2</span></span></div><div class="down">−7.6%</div></div>
+      <div class="mv"><div><span class="t">IBKR 盈透证券</span><span class="why">约 −7.1%。利率往上、风险偏好往下，券商先挨打。<span class="sup">8,2</span></span></div><div class="down">−7.1%</div></div>
+      <div class="mv"><div><span class="t">CRWD CrowdStrike</span><span class="why">约 −6.9%。网络安全板块一起砸。公司当天还报了渠道合作里程碑，也没撑住。<span class="sup">9,2</span></span></div><div class="down">−6.9%</div></div>
+      <div class="mv"><div><span class="t">DELL 戴尔</span><span class="why">约 −6.8%。收盘后要出业绩，盘中先砸。本表只记到正规盘收盘。<span class="sup">7,2</span></span></div><div class="down">−6.8%</div></div>
+      <div class="mv"><div><span class="t">ODFL 旧自治货运</span><span class="why">约 −6.5%。油贵了，运输股难受。道指运输平均大约 −2.5%。<span class="sup">1,8,2</span></span></div><div class="down">−6.5%</div></div>
+      <div class="mv"><div><span class="t">COIN Coinbase</span><span class="why">约 −6.0%。加密风险偏好下降。原因未核实到公司单独利空。<span class="sup">8,2</span></span></div><div class="down">−6.0%</div></div>
+      <div class="mv"><div><span class="t">CIEN 塞纳</span><span class="why">约 −5.9%。光通信，周四要出业绩，今天先跌。<span class="sup">8,2</span></span></div><div class="down">−5.9%</div></div>
     </div>
   </div>
-  <p class="note">Qnity Electronics（代码 Q）也跌了约 5.5%，名字生僻，原因未核实，先不展开。<span class="sup">6</span></p>
 
   <hr class="thin">
   <h2>你的关注</h2>
   <div class="strip">
-    <div class="cell"><div class="l">SPY</div><div class="n down">−0.30%</div></div>
-    <div class="cell"><div class="l">QQQ</div><div class="n up">+0.05%</div></div>
-    <div class="cell"><div class="l">TSLA</div><div class="n up">+5.51%</div></div>
-    <div class="cell"><div class="l">GOOG</div><div class="n down">−2.18%</div></div>
-    <div class="cell"><div class="l">CLSK</div><div class="n down">−0.34%</div></div>
+    <div class="cell"><div class="l">SPY</div><div class="n down">−0.69%</div></div>
+    <div class="cell"><div class="l">QQQ</div><div class="n down">−1.27%</div></div>
+    <div class="cell"><div class="l">TSLA</div><div class="n down">−3.22%</div></div>
+    <div class="cell"><div class="l">GOOG</div><div class="n down">−1.01%</div></div>
+    <div class="cell"><div class="l">CLSK</div><div class="n down">−4.82%</div></div>
   </div>
-  <p class="note">只报涨跌，不做持仓建议。<span class="sup">2</span></p>
+  <p class="note">只报涨跌，不做持仓建议。<span class="sup">2</span> 特斯拉昨天刚涨过，今天把一部分吐回去。CleanSpark 跟加密风险偏好走。</p>
 
   <hr class="thin">
   <h2>一句判断</h2>
-  <p class="judge">今天定价的是油和加息，不是哪家公司突然变好变坏。海峡再开火，钱往石油挪，离开怕利率的股票。还没定价清楚的是：这轮冲突会不会真把通胀打回来，以及 9 月 16 日美联储到底加不加。</p>
+  <p class="judge">今天定价的是油和加息，不是哪家公司突然变坏。海峡再打，钱离开贵的成长股，钻进油田和防守板块。还没定价清楚的是：霍尔木兹会不会一直堵，以及 9 月美联储到底加不加。加州电企今天涨，是周一砸完的反抽，别当成新故事。</p>
 
   <hr class="thin">
   <footer>
     <div class="kicker">出处</div>
     <ol>
-      <li>路透社，2026-08-31，《Wall Street closes lower as oil prices jump…》。标普 −0.33%、道指 −0.70%、纳指 −0.12%；霍尔木兹；沃什讲话。</li>
-      <li>本机 <code>host.docker.internal:8798</code> yfinance-api（yfinance 1.6.0，Yahoo 行情）。SPY/QQQ/IWM/DIA、11 个行业 ETF、TSLA/GOOG/CLSK、WFRD 等。</li>
-      <li>Barron's 直播稿，2026-08-31。8 月标普约 +2.6%、纳指约 +3.9%。</li>
-      <li>彭博 / 路透，英伟达拟向联发科投资 35 亿美元。</li>
-      <li>路透转述 CME FedWatch：9 月加息 25 基点概率超过 65%。</li>
-      <li>Yahoo Finance 日K（query1 chart），用来核对 8 月 31 日收盘，以及 8798 被打满后没拉全的个股（SLB、XOM、NVDA、PYPL、原油、黄金、VIX）。</li>
-      <li>TipRanks，2026-08-31：能源板块约 +2.11%，通信最弱。</li>
-      <li>路透 / 彭博：Advent 与 Stripe 放弃收购 PayPal 的报道。大跌主要在 8 月 28 日。</li>
-      <li>彭博 Stock Movers 播客，2026-08-31：Howmet、GE Vernova 等因 SpaceX 燃气轮机零件报道下跌。</li>
+      <li>路透社，2026-09-01，《Wall Street ends lower as higher yields, rising oil prices mark shaky start to September》。标普 −0.71% 至 7631.47，道指 −0.79% 至 52766.93，纳指 −1.03% 至 26099.77；霍尔木兹；能源最强、可选消费最弱；运输平均约 −2.5%；FedWatch 约 68%。</li>
+      <li>本机 <code>host.docker.internal:8798</code> yfinance-api（yfinance 1.6.0，Yahoo 行情）。SPY/QQQ/IWM/DIA、11 个行业 ETF、原油/黄金/VIX/十年期利率、TSLA/GOOG/CLSK 及涨跌榜。扫描约 492 只，成交 491 只。</li>
+      <li>华尔街日报，2026-09-01。美股连跌第三天；美国原油盘中超过 90 美元；布伦特约 +4.6% 收 94.65；十年期美债利率约 4.79%，2025 年 1 月以来最高；日本十年期国债利率触及 3%。</li>
+      <li>美国劳工统计局 JOLTS，2026-09-01：7 月职位空缺 727.1 万；6 月下修至 718.2 万；路透预估约 730 万。</li>
+      <li>美联社 / 半岛电视台 / UPI，2026-09-01：约翰·特努斯接替蒂姆·库克任苹果 CEO，库克改任执行董事长。4 月已宣布。</li>
+      <li>Seeking Alpha《Wall Street Breakfast》、MarketWatch / Morningstar，2026-08-31：加州山火责任法案令 PCG、EIX 周一大跌。周二涨幅是反弹。</li>
+      <li>Motley Fool 收盘稿，2026-09-01：莫德纳约 +9.93%（癌症疫苗余波）；艾克森约 −8.5%；戴尔盘中因收盘后业绩承压；CrowdStrike 约 −6.9%。</li>
+      <li>Benzinga 盘中综述，2026-09-01：软件估值杀；盈透、Coinbase、旧自治货运、塞纳等跌幅。塞纳定于 9 月 3 日早盘出业绩。</li>
+      <li>CrowdStrike / Optiv 新闻稿及 24/7 Wall St.：Fal.Con 上宣布渠道合作累计合同价值超过 20 亿美元，股价仍跌。</li>
     </ol>
-    <p>试跑说明：8798 并发一高就会 502，所以个股榜不是全市场穷尽。安静日或接口挂了会写清楚，不编数字。</p>
+    <p>安静日或接口挂了会写清楚，不编数字。不是荐股。</p>
   </footer>
 </body>
 </html>
